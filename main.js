@@ -44,7 +44,7 @@ async function main() {
         console.dir(cr, { depth: null })
         throw new Error("签到失败：" + cr.error_msg)
       }
-      if (i != 8) {
+      if (i != 2) {
         await delay(5 * 60 * 1000)
       }
     }
