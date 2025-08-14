@@ -32,7 +32,7 @@ async function main() {
       throw new Error("token刷新失败")
     }
     // 开始签到
-    for (let i = 1; i <= 8; i++) {
+    for (let i = 1; i <= 2; i++) {
       console.log(`开始第${i}次签到`)
       // 签到获取vip
       let cr = await send("/youth/vip", "GET", headers)
